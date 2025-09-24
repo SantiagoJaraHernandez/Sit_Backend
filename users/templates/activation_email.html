@@ -1,0 +1,4 @@
+<p>Hola {{ user.first_name|default:user.username }},</p>
+<p>Gracias por registrarte en SIT. Haz clic en el siguiente enlace para activar tu cuenta:</p>
+<p><a href="{{ activation_link }}">{{ activation_link }}</a></p>
+<p>Si no solicitaste este correo, ignóralo.</p>
