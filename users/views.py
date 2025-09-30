@@ -132,3 +132,4 @@ class CreateTeacherView(GenericAPIView):
             "message": "Profesor creado correctamente.",
             "user": UserSerializer(teacher_user).data
         }, status=status.HTTP_201_CREATED)
+ 

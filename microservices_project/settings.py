@@ -117,17 +117,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # === EMAIL (consola / SMTP real) ===
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'no-reply@tuservicio.com'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#DEFAULT_FROM_EMAIL = 'no-reply@tuservicio.com'
 
 # Para SMTP real (descomenta y configura):
-# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-# EMAIL_HOST = "smtp.gmail.com"
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = "tu_correo@gmail.com"
-# EMAIL_HOST_PASSWORD = "tu_contraseña_o_token"
-# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "sitcorhuila.noreply@gmail.com"
+EMAIL_HOST_PASSWORD = "kpmn pjzj mgno sixw"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
 # === DRF ===
