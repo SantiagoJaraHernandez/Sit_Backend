@@ -105,7 +105,7 @@ zope.interface==7.2
 
    ```bash
    git clone https://github.com/SantiagoJaraHernandez/Sit_Backend.git
-   cd project-name/SIT_EndpointsAvances
+   cd Sit_Backend
    ```
 
 2. **Crea y activa un entorno virtual**
@@ -241,7 +241,18 @@ Una vez el servidor esté en ejecución, accede a la documentación interactiva:
 
 - **Swagger UI:** [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
 - **Redoc:** [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
-- **Esquema JSON:** [http://localhost:8000/swagger.json](http://localhost:8000/swagger.json)
+- **Esquema OpenAPI 3:** [`docs/openapi.json`](docs/openapi.json) (generado con drf-spectacular)
+
+### Documentación técnica (carpeta `docs/`)
+
+| Archivo | Descripción |
+| ------- | ----------- |
+| [`docs/Documentacion_Tecnica_SIT_Backend.docx`](docs/Documentacion_Tecnica_SIT_Backend.docx) | Documentación técnica del proyecto (resumen, descripción, instalación, uso, metodología, resultados y conclusiones). |
+| [`docs/manual-tecnico.docx`](docs/manual-tecnico.docx) / [`.pdf`](docs/manual-tecnico.pdf) | Manual técnico: arquitectura, instalación, modelo de datos, autenticación, endpoints y errores. |
+| [`docs/openapi.json`](docs/openapi.json) | Especificación OpenAPI 3 de la API. |
+| [`docs/index.html`](docs/index.html) | Documentación ReDoc autocontenida (se abre directo en el navegador). |
+
+Para regenerar la especificación: `python manage.py spectacular --file docs/openapi.json --format openapi-json`
 
 ---
 
